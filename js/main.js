@@ -15,19 +15,18 @@ let guessNumber = function(){
     const getRandomNumber = function() {
         if(Number(number) === randomNumber) {
             alert('Поздравляю, Вы угадали!!!');
+            return false;
         } else {
-            var getNumber = function() {
                 if (Number(number) > randomNumber) {
                     number = prompt('Загаданное число меньше! Попробуй еще!');
                 } else if (Number(number) < randomNumber) {
                     number = prompt('Загаданное число больше! Попробуй еще!');
                 }
-            return getRandomNumber();
 
-        };
+
     };
 
-    return getNumber();
+    return getRandomNumber();
     };
 
     if (number === null) {
